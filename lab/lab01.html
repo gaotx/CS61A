@@ -1,0 +1,611 @@
+---
+layout: lab
+---
+
+<body style="font-family: Georgia,serif;">
+    <h1 id="title-main">Lab 1: Setting up a productive workflow</h1>
+
+    
+
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <ul>
+  <li><a href="#finding-a-text-editor">Finding a text editor</a></li>
+  <li><a href="#installing-python">Installing Python</a></li>
+</ul>
+
+  <li><a href="#getting-started">Getting started</a></li>
+  <ul>
+  <li><a href="#downloading-the-assignment">Downloading the assignment</a></li>
+</ul>
+
+  <li><a href="#setting-up-a-productive-workflow">Setting up a productive workflow</a></li>
+  <li><a href="#a-first-look-at-lab01-py">A first look at <code>lab01.py</code></a></li>
+  <li><a href="#running-doctests">Running doctests</a></li>
+  <li><a href="#submitting-assignments">Submitting assignments</a></li>
+  <ul>
+  <li><a href="#step-1">Step 1: Copying your assignment to your class account</a></li>
+  <li><a href="#step-1-5-logging-into-your-class-account">Step 1.5: Logging into your class account</a></li>
+  <li><a href="#step-2-submitting-your-assignment">Step 2: Submitting your assignment</a></li>
+  <li><a href="#step-3-verifying-your-submission">Step 3: Verifying your submission</a></li>
+</ul>
+
+  <li><a href="#windows-no-gitbash">Appendix: Windows users who aren't using GitBash</a></li>
+  <ul>
+  <li><a href="#step-1-copying-your-assignment-to-your-class-account">Step 1: Copying your assignment to your class account</a></li>
+  <li><a href="#step-1-5-logging-into-your-class-account">Step 1.5: Logging into your class account</a></li>
+</ul>
+
+</ul>
+
+
+    
+
+<h2 id="introduction">Introduction</h2>
+
+
+<p><a href="../lab00/" title="Lab 0">Lab 0</a> walked you through how to use the school computers for CS
+61A. This lab explains how to use your own computer to complete
+assignments!</p>
+
+
+<h3 id="finding-a-text-editor">Finding a text editor</h3>
+
+
+<p>First, we need to find a good text editor. A text editor is like
+Microsoft Word — a program that allows you to write in one or more
+languages. You will be using a text editor to create, modify, and save
+files.</p>
+
+<p>There are many editors out there, each with its own set of features.
+You can choose your own editor, but for the purpose of this class, your
+text editor must</p>
+
+<ul>
+  <li>Have an easy way to open and edit new files</li>
+  <li>Work well with Python files and plain text in general</li>
+  <li>Have line numbers</li>
+</ul>
+
+<p>In addition, almost all useful editors have</p>
+
+<ul>
+  <li>Syntax highlighting</li>
+  <li>Keyboard shortcuts</li>
+</ul>
+
+<p>Here are the text editors that we recommend. We've written short guides
+for each one to get you started:</p>
+
+<ul>
+  <li><a href="../sublime/">Sublime Text</a> (a popular choice among students)</li>
+  <li><a href="../emacs/">Emacs</a></li>
+  <li><a href="../vim/">Vim</a></li>
+</ul>
+
+<p>Each guide has a section on installing the text editor to your personal
+computer. For the sake of this lab, you can just jump to there.</p>
+
+<blockquote><p><strong>Note</strong>: Please, please, <em>please</em> do not use Microsoft Word to edit
+programs. Word is designed to edit natural languages like English —
+trouble will ensue if you try to write Python with Word!</p>
+
+<p><strong>Note</strong>: Python usually comes with a text editor called IDLE. We
+<strong>do not</strong> recommend it because you won't gain as much experience
+using the command line to run your Python programs. This is very
+important once you start working on the projects for this class so we
+highly recommend that you use the command line to run your files from
+day 1!</p></blockquote>
+
+
+<h3 id="installing-python">Installing Python</h3>
+
+
+<p>In addition to text editors, which let you <em>write</em> Python code, you
+will need to install the <strong>Python interpreter</strong>, which allows you to
+<em>run</em> Python code.</p>
+
+<p>You can get Python <a href="https://www.python.org/download">here</a>. Download
+one of the installers (for example, "Windows X86-64 MSI Installer" or
+"MacOS X 64-bit ... Installer"). If your computer is a 64-bit machine,
+you should download the 64-bit installer. (In general, if your computer
+is new within the past 2 years, it is likely 64-bit. Ask a TA or lab
+assistant if you're not sure.)</p>
+
+<blockquote class="help-mac">
+
+<p>MacOS users can refer to this
+<a href="https://www.youtube.com/watch?v=smHuBHxJdK8">video</a> for additional
+help on setting up Python.</p>
+
+</blockquote>
+
+<blockquote class="help-windows">
+
+<p>Windows users can refer to this
+<a href="https://www.youtube.com/watch?v=54-wuFsPi0w">video</a> for additional
+help on setting up Python (up to 1:09 into the video).</p>
+
+<p>You will also need to configure your <code>PATH</code>; the same
+<a href="https://www.youtube.com/watch?v=54-wuFsPi0w#t=300">video</a> describes
+how to do this from 3:00 to 5:54.</p>
+
+</blockquote>
+
+
+<h2 id="getting-started">Getting started</h2>
+
+
+<p>First, open up a terminal.</p>
+
+<blockquote class="help-mac">
+
+<p>If you're on a Mac or are using a form of Linux (such as Ubuntu), you
+already have a program called <code>Terminal</code> on your computer.  Open that
+up and you should be good to go.</p>
+
+</blockquote>
+
+<blockquote class="help-windows">
+
+<p>For Windows users, you have several options. We recommend downloading a
+program called <a href="http://git-scm.com/downloads">GitBash</a>, which behaves
+like a UNIX terminal.<sup><a href="#fnref-1">1</a></sup></p>
+
+<p><strong>Note</strong>: the video in the previous section uses a built-in terminal
+called <code>cmd</code> — this is not the same as GitBash.</p>
+
+</blockquote>
+
+<p>Once you have your terminal open, we'll use what we learned from <a href="../lab00/" title="Lab 0">Lab
+0</a>: our handy Unix commands!</p>
+
+<p><img src="assets/terminal.png" alt="starting the terminal"></p>
+
+<p>Right now, I'm in my home directory. Recall from <a href="../lab00/" title="Lab 0">Lab 0</a> that the
+home directory is represented by the <code>~</code> symbol (outlined in green
+above).</p>
+
+<blockquote><p>Don't worry if your terminal window doesn't look exactly the
+same; the important part is that the text on the left hand side is
+relatively the same (with a different name) and you should definitely
+see a <code>~</code> (tilde).</p></blockquote>
+
+<p>We can use commands like <code>cd</code> and <code>ls</code> just like before. Let's make a
+directory called <code>cs61a</code> to store all of the assignments for this
+class.</p>
+
+<pre><code>mkdir ~/cs61a</code></pre>
+
+<p>A folder called <code>cs61a</code> will appear in our home directory.  Let's also
+add a <code>projects</code>, <code>lab</code>, and a <code>lab01</code> folder inside of our <code>lab</code>
+folder.</p>
+
+<pre><code>cd ~/cs61a
+mkdir projects
+mkdir lab
+mkdir lab/lab01</code></pre>
+
+<p>Now if we list the contents of the directory (using <code>ls</code>), we'll see
+two folders, <code>projects</code> and <code>lab</code>.</p>
+
+<p><img src="assets/terminal_commands.png" alt="cs61a directory"></p>
+
+
+<h3 id="downloading-the-assignment">Downloading the assignment</h3>
+
+
+<p>Next, download the template file, <a href="lab01.py">lab01.py</a>. Once you've done that,
+let's find our downloaded file:</p>
+
+<ol>
+  <li><p>On most computers, <code>lab01.py</code> is probably located in a directory
+  called <code>Downloads</code> in your home directory. Let's use the <code>ls</code>
+  command to check:</p>
+
+<pre><code>ls ~/Downloads</code></pre>
+
+  <p>If you don't see <code>lab01.py</code>, ask a TA or lab assistant for help.</p></li>
+  <li><p>Let's move our starter file into our new lab directory:</p>
+
+<pre><code>mv ~/Downloads/lab01.py ~/cs61a/lab/lab01</code></pre>
+
+  <p>This command will move the file located at <code>~/Downloads/lab01.py</code> to
+  the directory <code>~/cs61a/lab/lab01</code>.</p></li>
+</ol>
+
+<p>Now, go back into the <code>lab01</code> folder that we made earlier.</p>
+
+<pre><code>cd ~/cs61a/lab/lab01</code></pre>
+
+<p>We're ready to start editing a file. Don't worry if this seems
+complicated — it will get much easier over time.  Just keep
+practicing!</p>
+
+
+<h2 id="setting-up-a-productive-workflow">Setting up a productive workflow</h2>
+
+
+<p>Let's start editing some files! For each assignment, we'll
+provide you with some starter code (for example, <code>lab01.py</code>); all you
+have to do is fill in the parts that are incomplete.</p>
+
+<p>Open <code>lab01.py</code> in your editor of choice. You should see the following
+text:</p>
+
+<p><img src="assets/lab01.png" alt="lab01.py in a text editor"></p>
+
+<p>In our productive workflow, we suggest having at least two windows open
+at all times.</p>
+
+<ol>
+  <li>Your text editor with the files you are editing.</li>
+  <li>Your terminal window so you can easily run doctests and later on,
+  unit tests.</li>
+</ol>
+
+<p>Here's a screenshot of a typical workspace. We've got our text editor
+on the left and our terminal on the right!</p>
+
+<p><img src="assets/workflow.png" alt="productive workflow"></p>
+
+<blockquote><p>Again, the screenshots in this lab are using Sublime Text 2
+on Mac OS X as our text editor; this particular setup might look
+different from yours. That's okay!</p></blockquote>
+
+
+<h2 id="a-first-look-at-lab01-py">A first look at <code>lab01.py</code></h2>
+
+
+<p>Notice the various blocks of green text that are wrapped within three
+quotation marks <code>"""</code>. That text is called a <strong>docstring</strong>, which is a
+description of what the function is supposed to do.</p>
+
+<p>Within the docstring, there are lines that begin with <code>&gt;&gt;&gt;</code>. These
+lines are called <strong>doctests</strong>. Doctests are a great way to
+explain what the function does by showing actual Python code: "if we
+input this Python code (the lines that say <code>&gt;&gt;&gt;</code>), what should the
+expected output be (the lines underneath the <code>&gt;&gt;&gt;</code>)?"</p>
+
+<p>In particular, let's look at the <code>my_email()</code> function:</p>
+
+<p><img src="assets/email.png" alt="<code>my_name</code> function"></p>
+
+<p>The test in our docstring checks that you changed the return value from
+the default <code>'oski@berkeley.edu'</code>.</p>
+
+<p>How do we use these tests? Glad you asked!</p>
+
+
+<h2 id="running-doctests">Running doctests</h2>
+
+
+<p>To run our doctests, switch over to our terminal and type in the
+following command:</p>
+
+<pre><code>python3 -m doctest lab01.py</code></pre>
+
+<blockquote class="help-windows">
+
+<p>If you are using Windows and the <code>python3</code> command doesn't work, try
+using just <code>python</code> or <code>py</code>. If neither of those work, take another
+look at the video in the section on <a href="#installing-python">installing
+Python</a> to make sure you are setting up your PATH
+correctly.</p>
+
+</blockquote>
+
+<p>This will print out a lot of output that shows which tests we are
+currently failing. You should see something like this:</p>
+
+<p><img src="assets/doctests.png" alt="doctest output"></p>
+
+<p>Oh man, we had 2 failures! :( Before we begin fixing our bugs, let's
+see what this output says. In particular, look at the <code>my_email</code> test
+that we failed:</p>
+
+<p><img src="assets/email_failure.png" alt="my name test failure"></p>
+
+<p>Notice it says we had an error in <code>lab01.py</code> on line 4, in the
+function <code>my_email</code>. Now we know exactly where to look for the bug
+(this is why line numbers are a must for text editors).</p>
+
+<p>After we find line 4, let's try to understand what the test
+is saying: the function <code>my_email</code>, when called with zero inputs,
+should <strong>not</strong> return the string <code>'oski@berkeley.edu'</code>. The
+problem is, ours is returning that string! Change that to your
+berkeley.edu email:</p>
+
+<pre><code>def my_email():
+    """Return your last name as a string.
+
+    &gt;&gt;&gt; my_email() != 'oski@berkeley.edu'
+    True
+    """
+    return 'jane.doe@berkeley.edu'</code></pre>
+
+<p>Once you've changed the return value of the function <code>my_email</code>
+(make sure that you're returning a string, which has quotes around it),
+try running the doctests again from your terminal:</p>
+
+<pre><code>python3 -m doctest lab01.py</code></pre>
+
+<p>The test for <code>my_email</code> should pass. One down, one to go!</p>
+
+<p>For the second function, <code>twenty_fourteen</code>, replace the blank line with
+an expression that evaluates to the number 2014, using only integers
+and the functions <code>add</code> and <code>mul</code>. There are many simple ways to do
+this — try to come up with the most creative solution! Make sure your
+doctests pass once you're done.</p>
+
+<blockquote><p>You might run your doctests and see that there is no output. This is
+actually good — it means all the tests passed. By default, doctests
+only print output when you have <strong>failures</strong> in your tests.</p>
+
+<p>However, if you want to double-check that you are passing all of the
+tests, you can add a command line flag <code>-v</code> to see <em>all</em> the output,
+including the tests that passed:</p>
+
+<pre><code>python3 -m doctest -v lab01.py</code></pre>
+
+<p>This is called "verbose" mode.</p></blockquote>
+
+<p>Once all of your tests pass, the verbose output of the doctests
+(<code>python3 -m doctest lab01.py -v</code>) should look something like this:</p>
+
+<p><img src="assets/passed_tests.png" alt="successful"></p>
+
+<blockquote><p>For more help throughout the semester on fixing bugs, take a look at
+<a href="http://albertwu.org/cs61a/notes/debugging">Albert's debugging
+guide</a>.</p></blockquote>
+
+
+<h2 id="submitting-assignments">Submitting assignments</h2>
+
+
+<p>Now that you have completed your first CS 61A assignment, it's time to
+turn it in. There are a couple of steps to do:</p>
+
+<ol>
+  <li>Copy your assignment file to your class account</li>
+  <li>Submit your assignment</li>
+  <li>Verify that we have received your assignment</li>
+</ol>
+
+<blockquote class="help-windows">
+
+<p><strong>For Windows users</strong>: Steps 1 and 1.5 below assume you are using Git
+Bash as your terminal. If you chose one of the alternative methods in
+the footnote<sup><a href="#fnref-1">1</a></sup>, please see the <a href="#windows-no-gitbash">appendix</a> for
+help with steps 1 and 1.5.</p>
+
+</blockquote>
+
+
+<h3 id="step-1">Step 1: Copying your assignment to your class account</h3>
+
+
+<p>Before you can turn in your assignment, you need to get it onto your
+class account first.</p>
+
+<p>From your terminal, Navigate to your directory that contains <code>lab01.py</code>,
+if you aren't there already:</p>
+
+<pre><code>cd ~/cs61a/lab/lab01</code></pre>
+
+<p>To copy <code>lab01.py</code> to your class account, type in the following command</p>
+
+<pre><code>scp lab01.py cs61a-??@cory.eecs.berkeley.edu:~</code></pre>
+
+<p>where <code>??</code> is replaced with your two (or three) letter login.</p>
+
+<blockquote><p>To understand what this command does, let's break it down into three
+parts.</p>
+
+<ol>
+  <li><code>scp</code> stands for <strong>s</strong>ecure <strong>c</strong>o<strong>p</strong>y. It is used for
+  transferring data over a network.</li>
+  <li><code>lab01.py</code> is the path to the file(s) that you want to copy.</li>
+  <li><p><code>cs61a-??@cory.eecs.berkeley.edu:~</code> is the destination. Unlike the
+  normal <code>cp</code> command, the destination of the <code>scp</code> command can be a
+  location on a remote computer.</p>
+
+  <ul>
+    <li><code>cs61a-??</code> is the username on that remote computer (in this case,
+    your class login).</li>
+    <li><code>cory.eecs.berkeley.edu</code> is the name of the remote computer (also
+    known as a <strong>server</strong>). A complete list of servers can be found
+    <a href="http://inst.eecs.berkeley.edu/cgi-bin/clients.cgi?choice=13&amp;string=">here</a>.</li>
+    <li>The <code>:</code> separates the name of the server from the location on
+    that server, <code>~</code>. Recall that <code>~</code> stands for the home directory.
+    In other words, the destination is the home directory of your
+    class account.</li>
+  </ul></li>
+</ol></blockquote>
+
+<p>After typing this command, you'll be asked for your password and then
+the file will transfer over.</p>
+
+
+<h3 id="step-1-5-logging-into-your-class-account">Step 1.5: Logging into your class account</h3>
+
+
+<p>Great, now <code>lab01.py</code> is on the instructional servers. <strong>You're not done
+quite yet!</strong> We have to actually submit our files.</p>
+
+<p>To do this, we first have to log into our class account. Type in the
+following command:</p>
+
+<pre><code>ssh cs61a-??@cory.eecs.berkeley.edu</code></pre>
+
+<p>where <code>??</code> is replaced with your two (or three) letter login.</p>
+
+<blockquote><p>Again, if you're interested, here's an explanation of what the
+command does:</p>
+
+<ol>
+  <li><code>ssh</code> is a <strong>s</strong>ecure <strong>sh</strong>ell (i.e. terminal) that connects to
+  remote servers</li>
+  <li><code>cs61a-??</code> is the username on the remote server</li>
+  <li><code>cory.eecs.berkeley.edu</code> is the name of the remote server. Again, here
+  is a list of <a href="http://inst.eecs.berkeley.edu/cgi-bin/clients.cgi?choice=13&amp;string=">servers</a> that belong to Berkeley's CS department</li>
+</ol></blockquote>
+
+<p>You can also watch this
+<a href="http://www.youtube.com/watch?v=irwlU7esODA">video</a> for help.</p>
+
+<p>Once you are logged in, you'll see something like this:</p>
+
+<p><img src="assets/ssh.png" alt="inst login"></p>
+
+
+<h3 id="step-2-submitting-your-assignment">Step 2: Submitting your assignment</h3>
+
+
+<p>If you copied your files over correctly, you should be able to type
+<code>ls</code> and see your <code>lab01.py</code> file. If not, take another look at <a href="#step-1">Step
+1</a>.</p>
+
+<blockquote><p>If you're really stuck, try posting on Piazza first. If that still
+doesn't help, come talk to one of the TAs in office hours.</p></blockquote>
+
+<p>To stay organized, we'll first create a folder on our class account to
+hold <code>lab01.py</code>.  In the future, you'll be submitting projects with
+multiple files so it's good to get in a habit of creating a new folder
+for each assignment. Let's make the <code>lab01</code> directory, move our
+<code>lab01.py</code> file into it, and then <code>cd</code> into our <code>lab01</code> folder:</p>
+
+<pre><code>mkdir lab01
+mv lab01.py lab01
+cd lab01</code></pre>
+
+<p>We're all ready to submit our assignment. First, run the doctests one
+last time to make sure everything is passing:</p>
+
+<pre><code>python3 -m doctest lab01.py</code></pre>
+
+<blockquote class="help-windows">
+
+<p>For Windows: now that we are logged into our class account, we will be
+using <code>python3</code>, not just <code>python</code> or <code>py</code>.</p>
+
+</blockquote>
+
+<p>Good, the tests pass. But wait, there's more! Recall that, when you
+first received your class account, you were asked to enter registration
+information. Double check that this information is correct:</p>
+
+<pre><code>check-register</code></pre>
+
+<p>If you find errors (e.g. you typed your last name as "ssh update"), fix
+them immediately by running the command:</p>
+
+<pre><code>re-register</code></pre>
+
+<blockquote><p><strong>Note</strong>: you don't have to do this every time you submit an
+assignment — we just want to make sure it is correct now before it's
+too late.</p></blockquote>
+
+<p>Okay, now we're ready to submit our assignment. From within the <code>lab01</code>
+directory, type</p>
+
+<pre><code>submit lab01</code></pre>
+
+<blockquote><p>There will be a "sanity check" that verifies some simple details
+about your assignment. For <code>lab01</code>, the sanity check makes sure you
+didn't fill in <code>lab01.py</code> incorrectly. For regular assignments, the
+sanity check will do other things, like check for syntax errors.</p></blockquote>
+
+
+<h3 id="step-3-verifying-your-submission">Step 3: Verifying your submission</h3>
+
+
+<p>To check that you successfully submitted, type in</p>
+
+<pre><code>glookup -t</code></pre>
+
+<p><code>glookup</code> is the name of the command that you will use this semester to
+check your grades. At any time, you can simply enter <code>glookup</code> to check
+your grades. Adding a <code>-t</code> to the <code>glookup</code> command allows you to
+see all the times that you have successfully submitted an assignment.
+You should see a successful submission of about 1 minute ago.</p>
+
+<p><strong>Congratulations</strong>, you just submitted your first CS61A assignment!</p>
+
+<blockquote class="help-windows">
+
+
+<h2 id="windows-no-gitbash">Appendix: Windows users who aren't using GitBash</h2>
+
+
+<p>This section goes over Steps 1 and 1.5 of the "Submitting Assignments"
+section for Windows users who decide not to use GitBash. This process
+involves installing two additional pieces of software, which is why we
+recommend using GitBash.</p>
+
+
+<h3 id="step-1-copying-your-assignment-to-your-class-account">Step 1: Copying your assignment to your class account</h3>
+
+
+<p>If you decided to use Windows's built-in terminal <code>cmd</code>, the <code>scp</code>
+command described earlier in the lab won't be available. Instead,
+you'll need to first download a program called
+<a href="http://winscp.net/eng/download.php">WinSCP</a>.</p>
+
+<p>After you've installed WinSCP, open it up and configure it so that you
+can log in to the server. Here's a screenshot of a typical log in:</p>
+
+<p><img src="assets/WinSCP.png" alt="WinSCIP"></p>
+
+<p>Once you're logged in, all you have to do is navigate to your
+<code>cs61a/lab</code> folder on the left and drag your file over to the server on
+the right.</p>
+
+
+<h3 id="step-1-5-logging-into-your-class-account">Step 1.5: Logging into your class account</h3>
+
+
+<p>In step 1, we used WinSCP to <em>copy files</em> from your personal computer
+to your class account. In step 1.5, we will use another program called
+PuTTY to <em>log in</em> to your class account. You can download
+<a href="http://www.putty.org/">PuTTY</a>.</p>
+
+<p>Take a a look at <a href="http://www.youtube.com/watch?v=gDDaz6Sb8jo">this
+video</a> to learn how to
+setup PuTTY.</p>
+
+</blockquote>
+
+<hr>
+
+<div id="footnotes">
+  <ol>
+    <li id="fnref-1"><p>If you're on Windows, there are a few other options besides using
+GitBash.  Windows has a built-in terminal called <code>cmd</code>, which
+behaves slightly differently than Unix (for example, <code>ls</code> is called
+<code>dir</code>). Another option is a program called
+<a href="http://cygwin.com/install.html">Cygwin</a>, which behaves more like
+UNIX.</p></li>
+  </ol>
+</div>
+  
+
+  <script>
+  $(function() {
+    if (new Date("08/05/2014") < new Date()) {
+      $('.toggleButton').css('display', 'inline-block');
+      $('.toggleButton').click(function() {
+        var solution_id = $(this).attr('id');
+        $('div.' + solution_id).slideToggle(600);
+      });
+    }
+    // Always display these toggle buttons
+    $('.toggleButtonShow').click(function() {
+      var solution_id = $(this).attr('id');
+      $('div.' + solution_id).slideToggle(600);
+    });
+  });
+</script>
+
+</body>
