@@ -4,17 +4,28 @@ title: Practice Problems
 ---
 
 <div>
-
-<a href="env_diag/llama_yak.html" data-topic="env-diag hofs" data-language="python">Llama Yak HOF (Env Diag, Hofs)</a><br>
-<a href="python/baby.html" data-topic="lists strings" data-language="python">Baby (Lists, Strings)</a><br>
-<a href="python/contains.html" data-topic="trees recursion" data-language="python">Contains (Trees, Recursion)</a><br>
-<a href="python/count_branches.html" data-topic="trees recursion" data-language="python">Count Branches (Trees, Recursion)</a><br>
-<a href="python/filter_tree.html" data-topic="trees recursion" data-language="python">Filter Tree (Trees, Recursion)</a><br>
-<a href="python/find_max.html" data-topic="trees recursion" data-language="python">Find Max (Trees, Recursion)</a><br>
-<a href="python/knapsack.html" data-topic="tree-recursion lists" data-language="python">Knapsack (Tree Recursion, Lists)</a><br>
-<a href="python/magicindex.html" data-topic="lists recursion" data-language="python">Magic Index (Lists, Recursion)</a><br>
-<a href="python/muchsuchwow.html" data-topic="env-diag hofs lambdas" data-language="python">Much Such Wow (Env Diag, Hofs, Lambdas)</a><br>
-<a href="python/replace_with_leaf.html" data-topic="trees recursion" data-language="python">Replace with Leaf (Trees, Recursion)</a><br>
-<a href="python/sum_of_multiples.html" data-topic="control" data-language="python">Sum of all Multiples (Control)</a><br>
-<a href="python/tuple_replace.html" data-topic="tuples hofs" data-language="python">Tuple Replace (Tuples, Hofs)</a><br>
+		<div id="problems">
+			<p>Search Topic: <input type="text" class="search" placeholder="Search"></p>
+			<table>
+				<thead>
+					<tr>
+						<th><button class="sort" data-sort="name">Name</button></th>
+						<th><button class="sort" data-sort="topics">Topics</button></th>
+						<th><button class="sort" data-sort="difficulty">Difficulty</button></th>
+					</tr>
+				</thead>
+				<tbody class="list"><tr><td class="name"><a href="env_diag/llama_yak.html">Llama Yak HOF</a></td><td class="topics">Env Diag, Hofs</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/baby.html">Baby</a></td><td class="topics">Lists, Strings</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/contains.html">Contains</a></td><td class="topics">Trees, Recursion</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/count_branches.html">Count Branches</a></td><td class="topics">Trees, Recursion</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/filter_tree.html">Filter Tree</a></td><td class="topics">Trees, Recursion</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/find_max.html">Find Max</a></td><td class="topics">Trees, Recursion</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/if_this_not_that.html">If This Not That</a></td><td class="topics">Control</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/knapsack.html">Knapsack</a></td><td class="topics">Tree Recursion, Lists</td> <td class="difficulty">Advanced</td> </tr><tr><td class="name"><a href="python/lambda_fillins.html">Lambda Fillins</a></td><td class="topics">Functions, Hofs</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/less_than_counters.html">Less Than Counters</a></td><td class="topics">Control, Hofs, Iteration</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/magicindex.html">Magic Index</a></td><td class="topics">Lists, Recursion</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/muchsuchwow.html">Much Such Wow</a></td><td class="topics">Env Diag, Hofs, Lambdas</td> <td class="difficulty">Advanced</td> </tr><tr><td class="name"><a href="python/numbers_within.html">Numbers Within</a></td><td class="topics">Control, Recursion</td> <td class="difficulty">Advanced</td> </tr><tr><td class="name"><a href="python/over_nine_thousand.html">Over Nine Thousand</a></td><td class="topics">Trees</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/replace_with_leaf.html">Replace with Leaf</a></td><td class="topics">Trees, Recursion</td> <td class="difficulty">Average</td> </tr><tr><td class="name"><a href="python/sum_of_multiples.html">Sum of all Multiples</a></td><td class="topics">Control</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/temperature_converter.html">Function Introductions</a></td><td class="topics">Trees</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/triangular_sum.html">Triangular Sum</a></td><td class="topics">Iteration</td> <td class="difficulty">Basic</td> </tr><tr><td class="name"><a href="python/tuple_replace.html">Tuple Replace</a></td><td class="topics">Tuples, Hofs</td> <td class="difficulty">Average</td> </tr></tbody>
+			</table>
+		</div>
     </div>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+	<script>
+		var options = {
+		  valueNames: [ 'name', 'topics', 'difficulty' ]
+		  // valueNames: [ 'name', 'topics']
+		};
+
+		var problemList = new List('problems', options);
+	</script>
