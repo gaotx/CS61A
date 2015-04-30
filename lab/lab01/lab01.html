@@ -219,7 +219,7 @@ setting up Python (up to 1:09 into the video).</p>
 how to work on your personal computer, make sure you are <strong>not</strong> logged
 in to your class account.</p>
 
-<p><img src="{{ site.baseurl }}/assets/terminal(1).png" alt="starting the terminal"></p>
+<p><img src="assets/terminal.png" alt="starting the terminal"></p>
 
 <p>Right now, I'm in my home directory. The <strong>home directory</strong> is represented
 by the <code>~</code> symbol. When you first open your terminal, you will start in
@@ -296,7 +296,7 @@ mkdir lab/lab01</code></pre>
 <p>Now if we list the contents of the directory (using <code>ls</code>), we'll see two
 folders, <code>projects</code> and <code>lab</code>.</p>
 
-<p><img src="{{ site.baseurl }}/assets/terminal_commands.png" alt="cs61a directory"></p>
+<p><img src="assets/terminal_commands.png" alt="cs61a directory"></p>
 
 
 <h3 id="downloading-the-assignment">Downloading the assignment</h3>
@@ -398,7 +398,7 @@ by showing actual Python code: "if we input this Python code (the lines that say
 
 <p>In particular, let's look at the <code>my_email()</code> function:</p>
 
-<p><img src="{{ site.baseurl }}/assets/email.png" alt="<code>my_name</code> function"></p>
+<p><img src="assets/email.png" alt="<code>my_name</code> function"></p>
 
 <p>The doctest checks that you changed the return value (<code>return ...</code>) from the
 default <code>'oski@berkeley.edu'</code>.</p>
@@ -430,12 +430,12 @@ stuck!</p>
 <p>This will print out a lot of output that shows which tests we are currently
 failing. You should see something like this:</p>
 
-<p><img src="{{ site.baseurl }}/assets/doctests.png" alt="doctest output"></p>
+<p><img src="assets/doctests.png" alt="doctest output"></p>
 
 <p>Oh man, we had 2 failures! :( Before we begin fixing our bugs, let's see what
 this output says. In particular, look at the <code>my_email</code> test that we failed:</p>
 
-<p><img src="{{ site.baseurl }}/assets/email_failure.png" alt="my name test failure"></p>
+<p><img src="assets/email_failure.png" alt="my name test failure"></p>
 
 <p>Notice it says we had an error in <code>lab01.py</code> on line 4, in the function
 <code>my_email</code>. Now we know exactly where to look for the bug!  (This is why line
@@ -483,7 +483,7 @@ tests that passed:</p>
 <p>Once all of your tests pass, the verbose output of the doctests (<code>python3 -m
 doctest -v lab01.py</code>) should look something like this:</p>
 
-<p><img src="{{ site.baseurl }}/assets/passed_tests.png" alt="successful"></p>
+<p><img src="assets/passed_tests.png" alt="successful"></p>
 
 <blockquote><p>For more help throughout the semester on fixing bugs, take a look at
 <a href="http://albertwu.org/cs61a/notes/debugging">Albert's debugging guide</a>.</p></blockquote>
