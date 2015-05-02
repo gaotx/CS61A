@@ -1,19 +1,374 @@
 ---
 layout: page
-title: Announcement
+title: Calendar
 ---
 
-        <div class="announcements">
+<h4>This course has 38 lectures, 13 labs, 11 discussion, 4 quizes, 2 midterm, 5 projects. Make sure  prepare at least <strong>20</strong> hours per week for it.</h4>
 
-            <ul>
-                <li><span class="date">04/30</span> Added <strong>Extra Lectures Tab</strong>.</li>
-            	<li><span class="date">04/28</span> Version changed and sharing video.
-            		<ul>
-            			<li>As no available solutions for homeworks and discussions, we change to <strong>2015 Spring</strong>.</li>
-            			<li>If YouTube is not accessible, videos are shared on <a href="http://pan.baidu.com/s/1hqGinfm">百度云</a> with password <strong>29mg</strong>.</li>
-            		</ul>
-            	</li>	
-	            <li><span class="date">04/26</span> The site for CS61A has been built up. The course is expected to get start on <strong>05/04</strong>. </li>
-            </ul>
+<table id="calendar">
+<tbody><tr>
+<th>Week</th>
+<th>Date</th>
+<th>Lecture</th>
+<th>Reading</th>
+<th>Lab / Discussion</th>
+<th>Assignment / Exam / Project</th>
+</tr>
 
-        </div>
+<tr class="odd">
+<td rowspan="8" class="weeknum">1</td>
+<td>Monday, 05/04/2015</td>
+<td>Functions
+<br>
+(<a href="https://www.youtube.com/watch?v=Rw6VyLPr128&amp;list=PL6BsET-8jgYUQTbU_HkEYLmcGsTX-DFNl&amp;vq=hd1080">Video</a>) (<a href="assets/slides/01-Functions_1pp.pdf">1pp</a>) (<a href="assets/slides/01-Functions_1pps.pdf">1pps</a>) (<a href="assets/slides/01-Functions_8pp.pdf">8pp</a>) (<a href="assets/slides/01.py">01.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/11-getting-started.html">1.1</a><br>
+<a href="http://composingprograms.com/pages/12-elements-of-programming.html">1.2</a></td>
+<td><a href="lab/lab00/">Lab 0: Intro to UNIX</a><br>
+<a href="lab/lab01/">Lab 1: Your own machine</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Tuesday, 05/05/2015</td>
+<td>Names
+<br>
+(<a href="https://www.youtube.com/watch?v=j0ojOSce4zA&amp;list=PL6BsET-8jgYWjn83MdxVsfiEOPPt_md6_&amp;vq=hd1080">Video</a>) (<a href="assets/slides/02-Names_1pp.pdf">1pp</a>) (<a href="assets/slides/02-Names_1pps.pdf">1pps</a>) (<a href="assets/slides/02-Names_8pp.pdf">8pp</a>) (<a href="assets/slides/02.py">02.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/13-defining-new-functions.html">1.3</a><br>
+<a href="http://composingprograms.com/pages/14-designing-functions.html">1.4</a></td>
+<td><a href="{{ site.baseurl }}/disc/disc00.pdf">Discussion 0: Lost on the Moon</a> (<a href="{{ site.baseurl }}/disc/disc00_sol.pdf">Solutions</a>)</td>
+<td><a href="hw/hw01/">Homework 1</a> (due Wed 1/28) (<a href="hw-sol/hw01/">Solutions</a>)</td>
+</tr>
+<tr class="odd">
+<td>Wednesday, 05/06/2015</td>
+<td>Control
+<br>
+(<a href="https://www.youtube.com/watch?v=IPec2A7j2bY&amp;list=PL6BsET-8jgYXZ7aa9wE195b94NPteCoIr&amp;vq=hd1080">Video</a>) (<a href="assets/slides/03-Control_1pp.pdf">1pp</a>) (<a href="assets/slides/03-Control_1pps.pdf">1pps</a>) (<a href="assets/slides/03-Control_8pp.pdf">8pp</a>) (<a href="assets/slides/03.py">03.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/15-control.html">1.5</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Thursday, 05/07/2015</td>
+<td>Higher-Order Functions
+<br>
+(<a href="https://www.youtube.com/watch?v=WBAUNrsXan4&amp;list=PL6BsET-8jgYVHi8o64uu82USYJg4B0Ezr&amp;vq=hd1080">Video</a>) (<a href="assets/slides/04-Higher-Order_Functions_1pp.pdf">1pp</a>) (<a href="assets/slides/04-Higher-Order_Functions_1pps.pdf">1pps</a>) (<a href="assets/slides/04-Higher-Order_Functions_8pp.pdf">8pp</a>) (<a href="assets/slides/04.py">04.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/16-higher-order-functions.html">1.6</a></td>
+<td><a href="lab/lab02/">Lab 2: Functions and Control Structures</a></td>
+<td><a href="hw/quiz01/">Quiz 1</a> (due Thu 1/29) (<a href="hw-sol/quiz01/">Solutions</a>)<br>
+<a href="proj/hog/">Hog</a> (due Thu 2/5)</td>
+</tr>
+<tr class="odd">
+<td>Friday, 05/08/2015</td>
+<td>Environments
+<br>
+(<a href="https://www.youtube.com/watch?v=1P2UgdAWwYg&amp;list=PL6BsET-8jgYXVN4owr3uTsZlSUhjawHTD&amp;vq=hd1080">Video</a>) (<a href="assets/slides/05-Environments_1pp.pdf">1pp</a>) (<a href="assets/slides/05-Environments_1pps.pdf">1pps</a>) (<a href="assets/slides/05-Environments_8pp.pdf">8pp</a>) (<a href="assets/slides/05.py">05.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/16-higher-order-functions.html">1.6</a></td>
+<td><a href="{{ site.baseurl }}/disc/disc01.pdf">Discussion 1: Control Structures and Higher Order Functions</a> (<a href="{{ site.baseurl }}/disc/disc01_sol.pdf">Solutions</a>)</td>
+<td><a href="hw/hw02/">Homework 2</a> (due Mon 2/2) (<a href="hw-sol/hw02/">Solutions</a>)</td>
+</tr>
+<tr class="odd">
+<td>Saturday, 05/09/2015</td>
+<td>Recursion
+<br>
+(<a href="https://www.youtube.com/watch?v=B2_8t2jyvX0&amp;list=PL6BsET-8jgYV7Bz0fJk6SGhPpIepseBIi&amp;vq=hd1080">Video</a>) (<a href="assets/slides/06-Recursion_1pp.pdf">1pp</a>) (<a href="assets/slides/06-Recursion_1pps.pdf">1pps</a>) (<a href="assets/slides/06-Recursion_8pp.pdf">8pp</a>) (<a href="assets/slides/06.py">06.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/17-recursive-functions.html">1.7</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sunday, 05/10/2015</td>
+<td>Tree Recursion
+<br>
+(<a href="https://www.youtube.com/watch?v=VYYkJ1OLXBw&amp;list=PL6BsET-8jgYVzv6qNMAyrUp3FGG1rnKrS&amp;vq=hd1080">Video</a>) (<a href="assets/slides/07-Tree_Recursion_1pp.pdf">1pp</a>) (<a href="assets/slides/07-Tree_Recursion_1pps.pdf">1pps</a>) (<a href="assets/slides/07-Tree_Recursion_8pp.pdf">8pp</a>) (<a href="assets/slides/07.py">07.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/17-recursive-functions.html">1.7</a></td>
+<td><a href="lab/lab03/">Lab 3: Recursion</a></td>
+<td><a href="proj/hog_contest/">Hog Contest</a> (due Wed 2/18)</td>
+</tr>
+<tr class="odd">
+<td><strong>Bounus!!!</strong></td>
+<td>Function Examples
+<br>
+(<a href="https://www.youtube.com/watch?v=bi_2gAetCiI&amp;list=PL6BsET-8jgYWxsojjxmDuB6prRFy9_EsN&amp;vq=hd1080">Video</a>) (<a href="assets/slides/08-Function_Examples_1pp.pdf">1pp</a>) (<a href="assets/slides/08-Function_Examples_1pps.pdf">1pps</a>) (<a href="assets/slides/08-Function_Examples_8pp.pdf">8pp</a>) (<a href="assets/slides/08.py">08.py</a>)</td>
+<td></td>
+<td><a href="{{ site.baseurl }}//disc/disc02.pdf">Discussion 2: Recursion</a> (<a href="{{ site.baseurl }}/disc/disc02_sol.pdf">Solutions</a>)</td>
+<td><a href="exams/midterm1.html">Midterm 1</td>
+</tr>
+
+<tr class="even">
+<td rowspan="8" class="weeknum">2</td>
+<td>Monday, 05/11/2015</td>
+<td>Data Abstraction
+<br>
+(<a href="https://www.youtube.com/watch?v=nzP3nJ2np8w&amp;list=PL6BsET-8jgYWdztJo4021KHKQhp2v-WHB&amp;vq=hd1080">Video</a>) (<a href="assets/slides/09-Data_Abstraction_1pp.pdf">1pp</a>) (<a href="assets/slides/09-Data_Abstraction_1pps.pdf">1pps</a>) (<a href="assets/slides/09-Data_Abstraction_8pp.pdf">8pp</a>) (<a href="assets/slides/09.py">09.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/21-introduction.html">2.1</a><br>
+<a href="http://composingprograms.com/pages/22-data-abstraction.html">2.2</a></td>
+<td></td>
+<td><a href="hw/hw03/">Homework 3</a> (due Thu 2/19) (<a href="hw-sol/hw03/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Tuesday, 05/12/2015</td>
+<td>Sequences
+<br>
+(<a href="https://www.youtube.com/watch?v=R0o37yJ1PP0&amp;list=PL6BsET-8jgYWxWrCzuIQL6jqu6WW3K409&amp;vq=hd1080">Video</a>) (<a href="assets/slides/10-Sequences_1pp.pdf">1pp</a>) (<a href="assets/slides/10-Sequences_1pps.pdf">1pps</a>) (<a href="assets/slides/10-Sequences_8pp.pdf">8pp</a>) (<a href="assets/slides/10.py">10.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/23-sequences.html">2.3</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc03.pdf">Discussion 3: Data Abstraction</a> (<a href="{{ site.baseurl }}/disc/disc03_sol.pdf">Solutions</a>)</td>
+<td><a href="proj/maps/">Maps</a> (due Thu 2/26)</td>
+</tr>
+
+<tr class="even">
+<td>Wednesday, 05/13/2015</td>
+<td>Trees
+<br>
+(<a href="https://www.youtube.com/watch?v=c3xKjzbSxqg&amp;list=PL6BsET-8jgYXz1omz0y0R0Oul2UeuZ4xa&amp;vq=hd1080">Video</a>) (<a href="assets/slides/11-Trees_1pp.pdf">1pp</a>) (<a href="assets/slides/11-Trees_1pps.pdf">1pps</a>) (<a href="assets/slides/11-Trees_8pp.pdf">8pp</a>) (<a href="assets/slides/11.py">11.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/23-sequences.html">2.3</a></td>
+<td><a href="lab/lab04/">Lab 4: Lists</a></td>
+<td><a href="hw/hw04/">Homework 4</a> (due Mon 2/23) (<a href="hw-sol/hw04/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Thursday, 05/14</td>
+<td>Mutable Values
+<br>
+(<a href="https://www.youtube.com/watch?v=Q-CewobDFZM&amp;list=PL6BsET-8jgYXU-Q8BqLp6irX3mIhglZfW&amp;vq=hd1080">Video</a>) (<a href="assets/slides/12-Mutable_Values_1pp.pdf">1pp</a>) (<a href="assets/slides/12-Mutable_Values_1pps.pdf">1pps</a>) (<a href="assets/slides/12-Mutable_Values_8pp.pdf">8pp</a>) (<a href="assets/slides/12.py">12.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/24-mutable-data.html">2.4</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc04.pdf">Discussion 4: Trees</a> (<a href="{{ site.baseurl }}/disc/disc04_sol.pdf">Solutions</a>)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Friday, 05/15/2015</td>
+<td>Mutable Functions
+<br>
+(<a href="https://www.youtube.com/watch?v=w1TQ0yd8pG0&amp;index=1&amp;list=PL6BsET-8jgYXIj9GsmapI3AqDlBcH9_p5&amp;vq=hd1080">Video</a>) (<a href="assets/slides/13-Mutable_Functions_1pp.pdf">1pp</a>) (<a href="assets/slides/13-Mutable_Functions_1pps.pdf">1pps</a>) (<a href="assets/slides/13-Mutable_Functions_8pp.pdf">8pp</a>) (<a href="assets/slides/13.py">13.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/24-mutable-data.html">2.4</a></td>
+<td></td>
+<td><a href="http://www-inst.eecs.berkeley.edu/~cs61a/fa14/proj/trends/">Trends</a> (due Thu Oct 09)</td>
+</tr>
+<tr class="even">
+<td>Saturday, 05/16/2015</td>
+<td>Objects
+<br>
+(<a href="https://www.youtube.com/watch?v=A_EFoT4cBSk&amp;list=PL6BsET-8jgYViPUL3vs-H-xExWFBVFnwu&amp;vq=hd1080">Video</a>) (<a href="assets/slides/14-Objects_1pp.pdf">1pp</a>) (<a href="assets/slides/14-Objects_1pps.pdf">1pps</a>) (<a href="assets/slides/14-Objects_8pp.pdf">8pp</a>) (<a href="assets/slides/14.py">14.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/25-object-oriented-programming.html">2.5</a></td>
+<td><a href="lab/lab05/">Lab 5: Trees and Dictionaries</a></td>
+<td><a href="hw/hw05/">Homework 5</a> (due Wed 3/4) (<a href="hw-sol/hw05/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Sunday, 05/17/2015</td>
+<td>Inheritance
+<br>
+(<a href="https://www.youtube.com/watch?v=BCNE7M-SjWM&amp;list=PL6BsET-8jgYV2xrN6FtkJ7cSg5eksJyWC&amp;vq=hd1080">Video</a>) (<a href="assets/slides/15-Inheritance_1pp.pdf">1pp</a>) (<a href="assets/slides/15-Inheritance_1pps.pdf">1pps</a>) (<a href="assets/slides/15-Inheritance_8pp.pdf">8pp</a>) (<a href="assets/slides/15.py">15.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/25-object-oriented-programming.html">2.5</a></td>
+<td><a href="{{ site.baseurl }}/disc/disc05.pdf">Discussion 5: Mutation</a> (<a href="{{ site.baseurl }}/disc/disc05_sol.pdf">Solutions</a>)</td>
+<td><a href="proj/ants/">Ants</a> (due Thu 3/12)</td>
+</tr>
+<tr class="even">
+<td><strong>Bounous!!!</strong></td>
+<td>Representation
+<br>
+(<a href="https://www.youtube.com/watch?v=zkkS_9-fyzo&amp;list=PL6BsET-8jgYUMZOU1BmOEu0OS0LVPT080&amp;vq=hd1080">Video</a>) (<a href="assets/slides/16-Representation_1pp.pdf">1pp</a>) (<a href="assets/slides/16-Representation_1pps.pdf">1pps</a>) (<a href="assets/slides/16-Representation_8pp.pdf">8pp</a>) (<a href="assets/slides/16.py">16.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/27-recursive-data-structures.html">2.7</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="odd">
+    <td rowspan="7" class="weeknum">3</td>
+<td>Monday, 05/18/2015</td>
+<td>Generic Functions
+<br>
+(<a href="https://www.youtube.com/watch?v=wlu28Y0FpKU&amp;list=PL6BsET-8jgYXRvv3OYY1XBuCpD0LwYT2z&amp;vq=hd1080">Video</a>) (<a href="assets/slides/17-Generic_Functions_1pp.pdf">1pp</a>) (<a href="assets/slides/17-Generic_Functions_1pps.pdf">1pps</a>) (<a href="assets/slides/17-Generic_Functions_8pp.pdf">8pp</a>) (<a href="assets/slides/17.py">17.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/27-recursive-data-structures.html">2.7</a></td>
+<td><a href="lab/lab06/">Lab 6: Object Oriented Programming</a></td>
+<td><a href="hw/quiz02/">Quiz 2</a> (due Thu 3/5) (<a href="hw-sol/quiz02/">Solutions</a>)</td>
+</tr>
+<tr class="odd">
+<td>Tuesday, 05/19/2015</td>
+<td>Composition
+<br>
+(<a href="https://www.youtube.com/watch?v=yC4WPw_6ehY&amp;list=PL6BsET-8jgYUI1li1uY4-htTxhxbVhZ1i&amp;vq=hd1080">Video</a>) (<a href="assets/slides/18-Composition_1pp.pdf">1pp</a>) (<a href="assets/slides/18-Composition_1pps.pdf">1pps</a>) (<a href="assets/slides/18-Composition_8pp.pdf">8pp</a>) (<a href="assets/slides/18.py">18.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/29-recursive-objects.html">2.9</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc06.pdf">Discussion 6: Object Oriented Programming and Interfaces</a> (<a href="{{ site.baseurl }}/disc/disc06_sol.pdf">Solutions</a>)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Wednesday, 05/20/2015</td>
+<td>Hierarchy
+<br>
+(<a href="https://www.youtube.com/watch?v=DWhsOSHjY98&amp;list=PL6BsET-8jgYVkszPu32UP3S3m0BsyGbNz&amp;vq=hd1080">Video</a>) (<a href="assets/slides/19-Hierarchy_1pp.pdf">1pp</a>) (<a href="assets/slides/19-Hierarchy_1pps.pdf">1pps</a>) (<a href="assets/slides/19-Hierarchy_8pp.pdf">8pp</a>) (<a href="assets/slides/19.py">19.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/29-recursive-objects.html">2.9</a></td>
+<td></td>
+<td><a href="hw/hw06/">Homework 6</a> (due Mon 3/16) (<a href="hw-sol/hw06/">Solutions</a>)</td>
+</tr>
+<tr class="odd">
+<td>Thursday, 05/21/2015</td>
+<td>Growth
+<br>
+(<a href="https://www.youtube.com/watch?v=nXHvSlu-3rU&amp;list=PL6BsET-8jgYXXQZ13nKazWT5DA4S_x8np&amp;vq=hd1080">Video</a>) (<a href="assets/slides/20-Growth_1pp.pdf">1pp</a>) (<a href="assets/slides/20-Growth_1pps.pdf">1pps</a>) (<a href="assets/slides/20-Growth_8pp.pdf">8pp</a>) (<a href="assets/slides/20.py">20.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/28-generic-operations.html">2.8</a></td>
+<td><a href="lab/lab07/">Lab 7: Recursive Objects</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Friday, 05/22/2015</td>
+<td>Sets
+<br>
+(<a href="https://www.youtube.com/watch?v=eE5gTdwqboI&amp;list=PL6BsET-8jgYVJRDmWN6VbZILZ1nYQTv7Z&amp;vq=hd1080">Video</a>) (<a href="assets/slides/21-Sets_1pp.pdf">1pp</a>) (<a href="assets/slides/21-Sets_1pps.pdf">1pps</a>) (<a href="assets/slides/21-Sets_8pp.pdf">8pp</a>) (<a href="assets/slides/21.py">21.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/29-recursive-objects.html">2.9</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc07.pdf">Discussion 7: Orders of Growth</a> (<a href="{{ site.baseurl }}/disc/disc07_sol.pdf">Solutions</a>)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Saturday, 05/22/2015</td>
+<td>Data Examples
+<br>
+(<a href="https://www.youtube.com/watch?v=ZZhjo3-MGhU&amp;list=PL6BsET-8jgYWuLlTL3jAZHRvl8ArtL0xA&amp;vq=hd1080">Video</a>) (<a href="assets/slides/22-Data_Examples_1pp.pdf">1pp</a>) (<a href="assets/slides/22-Data_Examples_1pps.pdf">1pps</a>) (<a href="assets/slides/22-Data_Examples_8pp.pdf">8pp</a>) (<a href="assets/slides/22.py">22.py</a>)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sunday, 05/23/2015</td>
+<td>Users
+<br>
+(<a href="https://www.youtube.com/watch?v=kzDpfk8YhlE&amp;list=PL6BsET-8jgYXUY1CgeETigDkANUY97YlF&amp;vq=hd1080">Video</a>)</td>
+<td></td>
+<td><a href="lab/lab08/">Lab 8: Sets</a></td>
+<td><a href="exams/midterm2.html">Midterm 2</a></td>
+</tr>
+<tr class="odd">
+
+<tr class="even">
+<td rowspan="8" class="weeknum">4</td>
+<td>Monday, 05/25/2015</td>
+<td>Scheme
+<br>
+(<a href="https://www.youtube.com/watch?v=esIvijecRFw&amp;list=PL6BsET-8jgYXXvyxTuqq_VZwJ739uD3FH&amp;vq=hd1080">Video</a>) (<a href="assets/slides/24-Scheme_1pp.pdf">1pp</a>) (<a href="assets/slides/24-Scheme_1pps.pdf">1pps</a>) (<a href="assets/slides/24-Scheme_8pp.pdf">8pp</a>) (<a href="assets/slides/24.scm">24.scm</a>)</td>
+<td><a href="http://composingprograms.com/pages/31-introduction.html">3.1</a><br>
+<a href="http://composingprograms.com/pages/32-functional-programming.html">3.2</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tuesday, 05/26/2015</td>
+<td>Exceptions
+<br>
+(<a href="https://www.youtube.com/watch?v=fdw4up7yycQ&amp;list=PL6BsET-8jgYV3dBu5A0l5EXimDbSP9YCb&amp;vq=hd1080">Video</a>) (<a href="assets/slides/25-Exceptions_1pp.pdf">1pp</a>) (<a href="assets/slides/25-Exceptions_1pps.pdf">1pps</a>) (<a href="assets/slides/25-Exceptions_8pp.pdf">8pp</a>) (<a href="assets/slides/25.py">25.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/33-exceptions.html">3.3</a></td>
+<td><a href="lab/lab09/">Lab 9: Scheme</a></td>
+<td><a href="hw/hw07/">Homework 7</a> (due Wed 4/8) (<a href="hw-sol/hw07/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Wednesday, 05/27/2015</td>
+<td>Calculator
+<br>
+(<a href="https://www.youtube.com/watch?v=3ll6sSOg520&amp;index=1&amp;list=PL6BsET-8jgYW1jCx_q32WGFjfXfHExveL&amp;vq=hd1080">Video</a>) (<a href="assets/slides/26-Calculator_1pp.pdf">1pp</a>) (<a href="assets/slides/26-Calculator_1pps.pdf">1pps</a>) (<a href="assets/slides/26-Calculator_8pp.pdf">8pp</a>) (<a href="assets/slides/26.scm">26.scm</a>)</td>
+<td><a href="http://composingprograms.com/pages/34-interpreters-for-languages-with-combination.html">3.4</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc08.pdf">Discussion 8: Scheme</a> (<a href="{{ site.baseurl }}/disc/disc08_sol.pdf">Solutions</a>)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Thursday, 05/28/2015</td>
+<td>Interpreters
+<br>
+(<a href="https://www.youtube.com/watch?v=gm2PUh07bMI&amp;list=PL6BsET-8jgYWor6Lt6IV0Jr4fPG6Ea2bT&amp;vq=hd1080">Video</a>) (<a href="assets/slides/27-Interpreters_1pp.pdf">1pp</a>) (<a href="assets/slides/27-Interpreters_1pps.pdf">1pps</a>) (<a href="assets/slides/27-Interpreters_8pp.pdf">8pp</a>)</td>
+<td><a href="http://composingprograms.com/pages/35-interpreters-for-languages-with-abstraction.html">3.5</a></td>
+<td></td>
+<td><a href="proj/scheme/">Scheme</a> (due Thu 4/23)</td>
+</tr>
+<tr class="even">
+<td>Friday, 05/29/2015</td>
+<td>Tail Calls
+<br>
+(<a href="https://www.youtube.com/watch?v=BW8Y_OVpzDo&amp;list=PL6BsET-8jgYWKO_OyHv-xTZMbawPHekIE&amp;vq=hd1080">Video</a>) (<a href="assets/slides/28-Tail_Calls_1pp.pdf">1pp</a>) (<a href="assets/slides/28-Tail_Calls_1pps.pdf">1pps</a>) (<a href="assets/slides/28-Tail_Calls_8pp.pdf">8pp</a>) (<a href="assets/slides/28.scm">28.scm</a>)</td>
+<td><a href="http://composingprograms.com/pages/35-interpreters-for-languages-with-abstraction.html">3.5</a></td>
+<td><a href="lab/lab10/">Lab 10: Interpreters</a></td>
+<td><a href="hw/quiz03/">Quiz 3</a> (due Thu 4/9) (<a href="hw-sol/quiz03/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Saturday, 05/30/2015</td>
+<td>Iterators
+<br>
+(<a href="https://www.youtube.com/watch?v=AWhoY2oZVfo&amp;list=PL6BsET-8jgYWKPC0V2hmBloEXr7sdAg-v&amp;vq=hd1080">Video</a>) (<a href="assets/slides/29-Iterators_1pp.pdf">1pp</a>) (<a href="assets/slides/29-Iterators_1pps.pdf">1pps</a>) (<a href="assets/slides/29-Iterators_8pp.pdf">8pp</a>) (<a href="assets/slides/29.py">29.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/42-implicit-sequences.html">4.2</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc09.pdf">Discussion 9: Tail Calls</a> (<a href="{{ site.baseurl }}/disc/disc09_sol.pdf">Solutions</a>)</td>
+<td><a href="hw/hw08/">Homework 8</a> (due Wed 4/15) (<a href="hw-sol/hw08/">Solutions</a>)</td>
+</tr>
+<tr class="even">
+<td>Sunday, 05/31/2015</td>
+<td>Streams
+<br>
+(<a href="https://www.youtube.com/watch?v=YrqGb2JBkNo&amp;list=PL6BsET-8jgYXli0hoS9ypKVXVXNUMmhkc&amp;vq=hd1080">Video</a>) (<a href="assets/slides/30-Streams_1pp.pdf">1pp</a>) (<a href="assets/slides/30-Streams_1pps.pdf">1pps</a>) (<a href="assets/slides/30-Streams_8pp.pdf">8pp</a>) (<a href="assets/slides/30.py">30.py</a>)</td>
+<td><a href="http://composingprograms.com/pages/42-implicit-sequences.html">4.2</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Bounous!!!</strong></td>
+<td>Declarative Programming
+<br>
+(<a href="https://www.youtube.com/watch?v=n121RAYkVPs&amp;list=PL6BsET-8jgYWX6SojwvY32mFToOxMu33U&amp;vq=hd1080">Video</a>) (<a href="assets/slides/31-Declarative_Programming_1pp.pdf">1pp</a>) (<a href="assets/slides/31-Declarative_Programming_1pps.pdf">1pps</a>) (<a href="assets/slides/31-Declarative_Programming_8pp.pdf">8pp</a>) (<a href="assets/slides/31.sql">31.sql</a>)</td>
+<td><a href="http://composingprograms.com/pages/43-declarative-programming.html">4.3</a></td>
+<td><a href="lab/lab11/">Lab 11: Iterators, Generators, and Streams</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+    <td rowspan="7" class="weeknum">5</td>
+<td>Monday, 06/01/2015</td>
+<td>Tables
+<br>
+(<a href="https://www.youtube.com/watch?v=SaG01Ddywkc&amp;list=PL6BsET-8jgYUF1zgVr-CgSnmleudWPjMD&amp;vq=hd1080">Video</a>) (<a href="assets/slides/32-Tables_1pp.pdf">1pp</a>) (<a href="assets/slides/32-Tables_1pps.pdf">1pps</a>) (<a href="assets/slides/32-Tables_8pp.pdf">8pp</a>) (<a href="assets/slides/32.sql">32.sql</a>)</td>
+<td><a href="http://composingprograms.com/pages/43-declarative-programming.html">4.3</a></td>
+<td><a href="{{ site.baseurl }}//disc/disc10.pdf">Discussion 10: Iterators, Generators, and Streams</a> (<a href="{{ site.baseurl }}/disc/disc10_sol.pdf">Solutions</a>)</td>
+<td>Scheme Contest (due Mon 4/27)</td>
+</tr>
+<tr class="odd">
+<td>Tuesday, 06/02/2015</td>
+<td>Recursive Select
+<br>
+(<a href="https://www.youtube.com/watch?v=pExuYKZNRH4&amp;list=PL6BsET-8jgYXnX5_b70Is1sdoaIRvDF6H&amp;vq=hd1080">Video</a>) (<a href="assets/slides/33-Recursive_Select_1pp.pdf">1pp</a>) (<a href="assets/slides/33-Recursive_Select_1pps.pdf">1pps</a>) (<a href="assets/slides/33-Recursive_Select_8pp.pdf">8pp</a>) (<a href="assets/slides/33.sql">33.sql</a>)</td>
+<td><a href="http://composingprograms.com/pages/43-declarative-programming.html">4.3</a></td>
+<td></td>
+<td><a href="hw/hw09/">Homework 9</a> (due Wed 4/29) (<a href="hw-sol/hw09/">Solutions</a>)</td>
+</tr>
+<tr class="odd">
+<td>Wednesday, 06/03/2015</td>
+<td>Aggregation
+<br>
+(<a href="https://www.youtube.com/watch?v=2ajhv_e_u5Q&amp;list=PL6BsET-8jgYXjUV5yhiUOTb57VCvu-05e&amp;vq=hd1080">Video</a>) (<a href="assets/slides/34-Aggregation_1pp.pdf">1pp</a>) (<a href="assets/slides/34-Aggregation_1pps.pdf">1pps</a>) (<a href="assets/slides/34-Aggregation_8pp.pdf">8pp</a>) (<a href="assets/slides/34.sql">34.sql</a>)</td>
+<td><a href="http://composingprograms.com/pages/43-declarative-programming.html">4.3</a></td>
+<td><a href="lab/lab12/">Lab 12: SQL</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Thursday, 06/04/2015</td>
+<td>Distributed Computing
+<br>
+(<a href="https://www.youtube.com/watch?v=Zodu-ODnXuk&amp;list=PL6BsET-8jgYWPoecd14C2cg-5Th8KENVj&amp;vq=hd1080">Video</a>) (<a href="assets/slides/35-Distributed_Computing_1pp.pdf">1pp</a>) (<a href="assets/slides/35-Distributed_Computing_1pps.pdf">1pps</a>) (<a href="assets/slides/35-Distributed_Computing_8pp.pdf">8pp</a>)</td>
+<td><a href="http://composingprograms.com/pages/46-distributed-data-processing.html">4.6</a></td>
+<td><a href="{{ site.baseurl }}/disc/disc11.pdf">Discussion 11: SQL</a> (<a href="{{ site.baseurl }}/disc/disc11_sol.pdf">Solutions</a>)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Friday, 06/05/2015</td>
+<td>Distributed Data
+<br>
+(<a href="https://www.youtube.com/watch?v=91hRkNtqnNI&amp;list=PL6BsET-8jgYU1oQApl6yizWzJmeldHAdc&amp;vq=hd1080">Video</a>) (<a href="{{ site.baseurl }}/assets/slides/36-Distributed_Data_1pp.pdf">1pp</a>) (<a href="assets/slides/36-Distributed_Data_1pps.pdf">1pps</a>) (<a href="assets/slides/36-Distributed_Data_8pp.pdf">8pp</a>) (<a href="{{ site.baseurl }}/assets/slides/36.zip">36.zip</a>)</td>
+<td><a href="http://composingprograms.com/pages/46-distributed-data-processing.html">4.6</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Saturday, 06/06/2015</td>
+<td>Natural Language
+<br>
+(<a href="https://www.youtube.com/watch?v=63kincM38po&amp;list=PL6BsET-8jgYXzBQRbqKeihwr4d-qX8QR2&amp;vq=hd1080">Video</a>) (<a href="{{ site.baseurl }}/assets/slides/37-Natural_Language_1pp.pdf">1pp</a>) (<a href="{{ site.baseurl }}/assets/slides/37-Natural_Language_1pps.pdf">1pps</a>) (<a href="assets/slides/37-Natural_Language_8pp.pdf">8pp</a>) (<a href="{{ site.baseurl }}/assets/slides/37.zip">37.zip</a>)</td>
+<td></td>
+<td><a href="lab/lab13/">Lab 13: SQL II: Aggregation</a></td>
+<td>Quiz 4 (due Thu 4/30)</td>
+</tr>
+<tr class="odd">
+<td>Sunday, 06/07/2015</td>
+<td>Conclusion</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
