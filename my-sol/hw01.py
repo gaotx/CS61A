@@ -1,3 +1,4 @@
+# Q1
 from operator import add, sub
 
 def a_plus_abs_b(a, b):
@@ -13,7 +14,7 @@ def a_plus_abs_b(a, b):
     else:
         f = add
     return f(a, b)
-
+# Q2
 def two_of_three(a, b, c):
     """Return x*x + y*y, where x and y are the two largest members of the
     positive numbers a, b, and c.
@@ -28,7 +29,7 @@ def two_of_three(a, b, c):
     50
     """
     return max(a*a+b*b, a*a+c*c, b*b+c*c)
-
+# Q3
 def if_function(condition, true_result, false_result):
     """Return true_result if condition is a true value, and
     false_result otherwise.
@@ -68,7 +69,7 @@ def t():
 
 def f():
     return 1
-
+# Q4
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
     length.
@@ -94,7 +95,7 @@ def hailstone(n):
         steps = steps + 1
     print(n)
     return steps
-
+# Q5
 challenge_question_program = """
 s = 'print("s = " + repr(s) + "; eval(s)")'; eval(s)
 """
