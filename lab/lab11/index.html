@@ -163,7 +163,7 @@ work or not work?</p>
     <button id="9" class="toggleButtonShow">
     Toggle Explanation<noscript> (enable JavaScript)</noscript>
     </button>
-    <div class="solution 9" style="display: none;">
+    <div class="solution 9" style="display: block;">
 
 <p>No problem, this is a beautiful iterator.</p>
 
@@ -180,7 +180,7 @@ work or not work?</p>
     <button id="10" class="toggleButtonShow">
     Toggle Explanation<noscript> (enable JavaScript)</noscript>
     </button>
-    <div class="solution 10" style="display: none;">
+    <div class="solution 10" style="display: block;">
 
 <p>Oh no!  Where is <code>__next__</code>?  This fails to implement the iterator
 interface because calling <code>__iter__</code> doesn't return something that has
@@ -202,7 +202,7 @@ a <code>__next__</code> method.</p>
     <button id="11" class="toggleButtonShow">
     Toggle Explanation<noscript> (enable JavaScript)</noscript>
     </button>
-    <div class="solution 11">
+    <div class="solution 11" style="display: block;">
 
 <p>This also fails to implement the iterator interface.  Without the
 <code>__iter__</code> method, the <code>for</code> loop will error.  The <code>for</code> loop needs to
@@ -230,7 +230,7 @@ to type <code>Ctrl-C</code> to stop.)</p>
     <button id="12" class="toggleButtonShow">
     Toggle Explanation<noscript> (enable JavaScript)</noscript>
     </button>
-    <div class="solution 12">
+    <div class="solution 12" style="display: block;">
 
 <p>This is an infinite sequence!  Sequences like these are the reason
 iterators are useful.  Because iterators delay computation, we can use
@@ -281,19 +281,19 @@ it is run through a <code>for</code> loop.</p>
     7
     """
     def __init__(self, start, end):
-<div class="alt 0">        "*** YOUR CODE HERE ***"
-</div><div class="solution 0">        self.start = start
+<div class="alt 0" style="display: none;">        "*** YOUR CODE HERE ***"
+</div><div class="solution 0" style="display: block;">        self.start = start
         self.end = end
         self.current = start</div>
     def __next__(self):
-<div class="alt 0">        "*** YOUR CODE HERE ***"
-</div><div class="solution 0">        if self.current &gt; self.end:
+<div class="alt 0" style="display: none;">        "*** YOUR CODE HERE ***"
+</div><div class="solution 0" style="display: block;">        if self.current &gt; self.end:
             raise StopIteration
         self.current += 1
         return self.current - 1</div>
     def __iter__(self):
-<div class="alt 0">        "*** YOUR CODE HERE ***"
-</div><div class="solution 0">        self.current = self.start
+<div class="alt 0" style="display: none;">        "*** YOUR CODE HERE ***"
+</div><div class="solution 0" style="display: block;">        self.current = self.start
         return self</div></code></pre>
 
 
@@ -336,15 +336,15 @@ for i in generator():
 
     <pre><code>&gt;&gt;&gt; g = generator()
 &gt;&gt;&gt; g # what type of object is this?
-<div class="alt 8">______</div><div class="solution 8">&lt;generator object ...&gt;</div>
+<div class="alt 8" style="display: none;">______</div><div class="solution 8" style="display: block;">&lt;generator object ...&gt;</div>
 &gt;&gt;&gt; iter(g)
-<div class="alt 8">______</div><div class="solution 8">&lt;generator object ...&gt;</div>
+<div class="alt 8" style="display: none;">______</div><div class="solution 8" style="display: block;">&lt;generator object ...&gt;</div>
 &gt;&gt;&gt; next(g)
-<div class="alt 8">______</div><div class="solution 8">Starting here
+<div class="alt 8" style="display: none;">______</div><div class="solution 8" style="display: block;">Starting here
 Before yield
 0</div>
 &gt;&gt;&gt; next(g)
-<div class="alt 8">______</div><div class="solution 8">After yield
+<div class="alt 8" style="display: none;">______</div><div class="solution 8" style="display: block;">After yield
 Before yield
 1</div></code></pre>
 
@@ -410,8 +410,8 @@ within the <code>__iter__</code> method of a class.</p>
     1
     0
     """
-<div class="alt 1">    "*** YOUR CODE HERE ***"
-</div><div class="solution 1">    while n &gt;= 0:
+<div class="alt 1" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 1" style="display: block;">    while n &gt;= 0:
         yield n
         n = n - 1</div></code></pre>
 
@@ -435,8 +435,8 @@ within the <code>__iter__</code> method of a class.</p>
     1
     0
     """
-<div class="alt 2">    "*** YOUR CODE HERE ***"
-</div><div class="solution 2">    def __init__(self, cur):
+<div class="alt 2" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 2" style="display: block;">    def __init__(self, cur):
         self.cur = cur
 
     def __iter__(self):
@@ -469,8 +469,8 @@ within the <code>__iter__</code> method of a class.</p>
     2
     1
     """
-<div class="alt 3">    "*** YOUR CODE HERE ***"
-</div><div class="solution 3">    i = n
+<div class="alt 3" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 3" style="display: block;">    i = n
     while i &gt; 1:
         yield i
         if i % 2 == 0:
@@ -582,8 +582,8 @@ infinite.</p>
     &gt;&gt;&gt; added.rest.rest.first
     14
     """
-<div class="alt 4">    "*** YOUR CODE HERE ***"
-</div><div class="solution 4">    def compute_rest():
+<div class="alt 4" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 4" style="display: block;">    def compute_rest():
         return add_streams(s1.rest, s2.rest)
     return Stream(s1.first + s2.first, compute_rest)</div></code></pre>
 
@@ -615,15 +615,15 @@ then think about how to start calling that procedure.</p>
     &gt;&gt;&gt; fib.rest.rest.rest.rest.first
     3
     """
-<div class="alt 5">    "*** YOUR CODE HERE ***"
-</div><div class="solution 5">    return fib_stream_generator(0, 1)
+<div class="alt 5" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 5" style="display: block;">    return fib_stream_generator(0, 1)
 
 def fib_stream_generator(a, b):
     def compute_rest():
         return fib_stream_generator(b, a+b)
     return Stream(a, compute_rest)</div></code></pre>
 
-<div class="solution 5">
+<div class="solution 5" style="display: block;">
 
 <p>If the <code>add_streams</code> function has been defined, we can wrte
 <code>make_fib_stream</code> this way instead:</p>
@@ -686,7 +686,7 @@ def my_stream():
     <button id="6" class="toggleButton" style="display: inline-block;">
     Toggle Solution<noscript> (enable JavaScript)</noscript>
     </button>
-    <div class="solution 6">
+    <div class="solution 6" style="display: block;">
 
 <p>Powers of 3: 1, 3, 9, 27, 81, ...</p>
 
@@ -731,8 +731,8 @@ infinite as well.</p>
     &gt;&gt;&gt; alternating.rest.rest.rest.first
     1
     """     
-<div class="alt 7">    "*** YOUR CODE HERE ***"
-</div><div class="solution 7">    if stream1 is Stream.empty:
+<div class="alt 7" style="display: none;">    "*** YOUR CODE HERE ***"
+</div><div class="solution 7" style="display: block;">    if stream1 is Stream.empty:
         return Stream.empty
     return Stream(stream1.first, lambda: interleave(stream2, stream1.rest))</div></code></pre>
 
