@@ -306,12 +306,12 @@ have to unlock some of the tests first before you can use them to test your
 implementations. To unlock tests for question 1, run the following command from
 your terminal:</p>
 
-<pre><code>python3 ok -u -q 1</code></pre>
+<pre><code>python3 ok -u -q 01</code></pre>
 
 <p>Once you have unlocked the tests, you can run the tests for question 1 as
 follows:</p>
 
-<pre><code>python3 ok -q 1</code></pre>
+<pre><code>python3 ok -q 01</code></pre>
 
 <p>You can also invoke the autograder for all problems at once using:</p>
 
@@ -547,7 +547,7 @@ list of argument values, and the current environment.  Your implementation
 should:</p>
 
 <ul>
-  <li>Convert the Scheme list to a Python list of arguments.</li>
+  <li>Convert the Scheme list to a Python list of arguments <strong>(provided)</strong>.</li>
   <li>If the <code>procedure.use_env</code> is <code>True</code>, then add the current environment <code>env</code>
   as the last argument.</li>
   <li>Call <code>procedure.fn</code> on those arguments (<em>Hint</em>: use * notation).</li>
