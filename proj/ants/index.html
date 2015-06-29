@@ -2,15 +2,14 @@
 layout: resource
 title: Project 3 Ants Vs. SomeBees
 ---
-<div style="font-family: Georgia,serif;">
+<body style="font-family: Georgia,serif;">
     <h1 id="title-main">Project 3: Ants Vs. SomeBees</h1>
 
     <div id="haiku">
   
+<blockquote><p><img src="img/ants_vs_bees.png" alt="Ants vs. Somebees"></p>
 
-<p><img src="img/ants_vs_bees.png" alt="Ants vs. Somebees"></p>
-
-<blockquote><cite>
+<cite>
   The bees are coming!<br>
   Create a better soldier<br>
   With inherit-ants.
@@ -20,8 +19,11 @@ title: Project 3 Ants Vs. SomeBees
 
     <h2 id="table-of-contents">Table of Contents</h2>
     <ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#logistics">Logistics</a></li>
   <li><a href="#core-concepts">Core Concepts</a></li>
   <li><a href="#the-code">The Code</a></li>
+  <li><a href="#testing">Testing</a></li>
   <li><a href="#phase-1">Phase 1</a></li>
   <ul>
   <li><a href="#problem-1-0-pts">Problem 1 (0 pts)</a></li>
@@ -29,7 +31,7 @@ title: Project 3 Ants Vs. SomeBees
   <li><a href="#problem-3-1-pt">Problem 3 (1 pt)</a></li>
 </ul>
 
-  <li><a href="#phase-q2-water-and-fire-partner-a">Phase q2: Water and Fire (Partner A)</a></li>
+  <li><a href="#phase-2-water-and-fire-partner-a">Phase 2: Water and Fire (Partner A)</a></li>
   <ul>
   <li><a href="#problem-4a-2-pts">Problem 4A (2 pts)</a></li>
   <li><a href="#problem-5a-3-pts">Problem 5A (3 pts)</a></li>
@@ -56,165 +58,97 @@ title: Project 3 Ants Vs. SomeBees
   <li><a href="#phase-4">Phase 4</a></li>
   <ul>
   <li><a href="#problem-8-5-pts">Problem 8 (5 pts)</a></li>
-  <li><a href="#problem-8-5-optional---no-points-awarded-for-this-problem">Problem 8.5 (Optional - No points awarded for this problem)</a></li>
-  <li><a href="#problem-9-6-pts">Problem 9 (6 pts)</a></li>
+  <li><a href="#problem-9-5-pts">Problem 9 (5 pts)</a></li>
   <li><a href="#extra-credit-2-pts">Extra Credit (2 pts)</a></li>
 </ul>
 
 </ul>
 
 
-    <h2>Introduction</h2>
+    
 
 
-<p>In this project, you will create a [tower defense] game called Ants Vs.
-SomeBees.  As the ant queen, you populate your colony with the bravest ants you
-can muster.  Your ants must protect their queen from the evil bees that invade
-your territory. Irritate the bees enough by throwing leaves at them, and they
-will be vanquished.  Fail to pester the airborne intruders adequately, and your
-queen will succumb to the bees' wrath.  This game is inspired by PopCap Games'
-<a href="http://www.popcap.com/games/pvz/web">Plants Vs. Zombies</a>.</p>
+<h2 id="introduction">Introduction</h2>
+
+
+<p>In this project, you will create a <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Tower_defense">tower
+defense</a>
+defense game called Ants Vs. SomeBees.  As the ant queen, you
+populate your colony with the bravest ants you can muster.  Your ants
+must protect their queen from the evil bees that invade your territory.
+Irritate the bees enough by throwing leaves at them, and they will be
+vanquished.  Fail to pester the airborne intruders adequately, and your
+queen will succumb to the bees' wrath.  This game is inspired by PopCap
+Games' <a href="http://www.popcap.com/games/pvz/web">Plants Vs. Zombies</a>.</p>
 
 <p>This project combines functional and object-oriented programming paradigms,
 focusing on the material from <a href="http://composingprograms.com/pages/25-object-oriented-programming.html">Chapter 2.5</a> of Composing Programs. The
 project also involves understanding, extending, and testing a large program.</p>
 
-<p>The <a href="ants.zip">ants.zip</a> archive contains several files, but all of your
-changes will be made to <code>ants.py</code>.</p>
+<p>The project includes several files, but you will only modify <code>ants.py</code>. You can
+download the project code as a <a href="ants.zip">zip archive</a>.</p>
+
+<table cellpadding="10">
+  <tbody><tr>
+    <td><code><a href="ants.py">ants.py</a></code></td>
+    <td>The game logic of Ants Vs. SomeBees.</td>
+  </tr>
+  <tr>
+    <td><code><a href="ants_gui.py">ants_gui.py</a></code></td>
+    <td>Graphics for Ants Vs. SomeBees.</td>
+  </tr>
+  <tr>
+    <td><code><a href="graphics.py">graphics.py</a></code></td>
+    <td>General functions for displaying simple two-dimensional animations.</td>
+  </tr>
+  <tr>
+    <td><code><a href="ucb.py">ucb.py</a></code></td>
+    <td>Utility functions for CS 61A.</td>
+  </tr>
+  <tr>
+    <td><code><a href="img">img</a></code></td>
+    <td>A directory of images used by the graphical version of the game.</td>
+  </tr>
+  <tr>
+    <td><code><a href="ok">ok</a></code></td>
+    <td>Autograder software.</td>
+  </tr>
+  <tr>
+    <td><code><a href="tests">tests</a></code></td>
+    <td>A directory of tests used by <code>ok</code>.</td>
+  </tr>
+</tbody></table>
+
+
+<h2 id="logistics">Logistics</h2>
+
+
+<p>You'll work in a team of two people, Partner A and Partner B. In each part, you
+will do some of the work separately and some together with your partner. For
+example, if a problem is marked 5A, then it is a solo problem for Partner A.
+Both partners should read, think about, and understand the solution to all
+questions. Feel free to help each other on the solo questions. If you choose to
+work on the whole project alone, you must complete all questions yourself.</p>
+
+<p>To submit your finished project, run <code>python3 ok --submit</code>. You can run this
+command more than once; only the final submission before the deadline will be
+graded. Only one partner needs to submit. You can specify your partner and view
+your submissions on the <a href="https://ok-server.appspot.com">ok website</a>.</p>
+
+<p>Start early!  The amount of time it takes to complete a project (or any
+program) is unpredictable.  Ask for help early and often — the TAs and lab
+assistants are here to help. You are not alone!</p>
+
+<p>Scores will be assigned as follows:</p>
 
 <ul>
-  <li><code>ants.py</code>: The game logic of Ants Vs. SomeBees</li>
-  <li><code>ants_gui.py</code>: Graphics for Ants Vs. SomeBees</li>
-  <li><code>graphics.py</code>: Utilities for displaying simple two-dimensional animations</li>
-  <li><code>ucb.py</code>: Utility functions for CS 61A</li>
-  <li><code>img</code>: A directory of images used by the graphical version of the game</li>
-  <li><code>ok</code>: The autograder</li>
-  <li><code>proj3.ok</code>: The <code>ok</code> configuration file</li>
-  <li><code>tests</code>: A directory of tests used by <code>ok</code></li>
+  <li>25 total points for each person,</li>
+  <li>22/25 for correctness, and</li>
+  <li>3/25 for the overall composition of your program.</li>
 </ul>
 
-<p>Certain questions are designated for each partner and are appropriate as solo
-questions, in case you choose to divide up the work. Any question not marked as
-<code>A</code> or <code>B</code> should be solved together with your partner. Both partners should
-read, think about, and understand the solution to all questions. Feel free to
-help each other on the solo questions. If you choose to work on the whole
-project alone, you must complete all questions yourself.</p>
-
-
-
-<h2>Logistics</h2>
-
-<p>This is a 1-week project. You may work with one other
-partner.  You should not share your code with students who are not your
-partner or copy from anyone else's solutions.</p>
-
-<p>Start early! The amount of time it takes to complete a project (or any
-program) is unpredictable.</p>
-
-<p>You are not alone! Ask for help early and often -- the TAs, readers,
-lab assistants, and your fellow students are here to help. Try
-attending office hours or posting on Piazza.</p>
-
-<p>In the end, you will submit one project for both partners. The
-project is worth 25 points. 23 points are
-assigned for correctness, and 2 points for the overall <a href="../../composition.html">composition</a> of your program.</p>
-
-<p>You will turn in the following files:</p>
-
-
-<ul>
-  <li><code>ants.py</code></li>
-</ul>
-
-
-<p>You do not need to modify or turn in any other files to complete the
-project. To submit the project, run the following command. You will be able to
-view your submissions on the <a href="http://ok.cs61a.org">OK dashboard</a>.
-
-</p><p><code>python3 ok --submit</code>
-
-</p><p>For the functions that we ask you to complete, there may be some
-initial code that we provide. If you would rather not use that code,
-feel free to delete it and start from scratch. You may also add new
-function definitions as you see fit.</p>
-
-<p>However, please do <b>not</b> modify any other functions.  Doing so may
-result in your code failing our autograder tests. Also, please do not
-change any function signatures (names, argument order, or number of
-arguments).</p>
-
-<h2>Testing</h2>
-
-<p>Throughout this project, you should be testing the correctness of your
-code.  It is good practice to test often, so that it is easy to isolate
-any problems.</p>
-
-<p>We have provided an <b>autograder</b> called <code>ok</code> to help you with
-testing your code and tracking your progress. The first time you run
-the autograder, you will be asked to <b>log in with your @berkeley.edu
-  account using your web browser</b>. Please do so. Each time you run
-<code>ok</code>, it will back up your work and progress on our
-servers.</p>
-
-<p>The primary purpose of <code>ok</code> is to test your implementations, but there
-is a catch. At first, the test cases are <i>locked</i>. To unlock tests,
-run the following command from your terminal:</p>
-
-<pre><code>python3 ok -u</code></pre>
-
-<p>This command will start an interactive prompt that looks like:</p>
-
-<pre>=====================================================================
-Assignment: Project 3: Ants Vs. SomeBees
-OK, version ...
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Unlocking tests
-
-At each "? ", type what you would expect the output to be.
-Type exit() to quit
-
----------------------------------------------------------------------
-Question 0 &gt; Suite 1 &gt; Case 1
-(cases remaining: 1)
-
-&gt;&gt;&gt; Code here
-?
-</pre>
-
-<p>At the <code>?</code>, you can type what you expect the output to be.
-If you are correct, then this test case will be available the next time
-you run the autograder.</p>
-
-<p>The idea is to understand <i>conceptually</i> what your program should do
-first, before you start writing any code.</p>
-
-<p>Once you have unlocked some tests and written some code, you can check
-the correctness of your program using the tests that you have
-unlocked:</p>
-
-<pre>python3 ok</pre>
-
-<p>To help with debugging, <code>ok</code> can also be run in
-interactive mode:</p>
-
-<pre>python3 ok -i</pre>
-
-<p>If an error occurs, the autograder will start an interactive Python
-session in the environment used for the test, so that you can explore
-the state of the environment.</p>
-
-<p>Most of the time, you will want to focus on a particular question.
-Use the <code>-q</code> option as directed in the problems below.</p>
-
-<p>The <code>tests</code> folder is used to store autograder tests, so make sure
-<b>not to modify it</b>. You may lose all your unlocking progress if you
-do. If you need to get a fresh copy, you can download the
-<a href="ants.zip">zip archive</a> and copy it over, but you
-will need to start unlocking from scratch.</p>
-
-
+<p>There are also two points of extra credit available at the end of the
+project, due with your submission.</p>
 
 
 <h2 id="core-concepts">Core Concepts</h2>
@@ -296,6 +230,40 @@ optional arguments:
   --food FOOD   number of food to start with</code></pre>
 
 
+<h2 id="testing">Testing</h2>
+
+
+<p>We've included an autograder which includes tests for each question. You will
+have to unlock some of the tests first before you can use them to test your
+implementations. To unlock tests for question 1, run the following command from
+your terminal:</p>
+
+<pre><code>python3 ok -u -q 1</code></pre>
+
+<p>Once you have unlocked the tests, you can run the tests for question 1 as
+follows:</p>
+
+<pre><code>python3 ok -q 1</code></pre>
+
+<p>To help with debugging, you can also start an interactive session whenever
+an error occurs by adding the <code>-i</code> flag:</p>
+
+<pre><code>python3 ok -q 1 -i</code></pre>
+
+<p>You can also invoke the autograder for all problems at once using:</p>
+
+<pre><code>python3 ok</code></pre>
+
+<p>The <code>tests</code> directory is used to store autograder tests, so make sure
+<strong>not to modify it</strong>. You may lose all your unlocking progress if you
+do. If you need to get a fresh copy, you can download the <a href="ants.zip">zip
+archive</a> and copy it over, but you will need to start
+unlocking from scratch.</p>
+
+<p>If you have any problems logging in or communicating with the server, use the
+<code>--local</code> flag to inhibit any server communication.</p>
+
+
 <h2 id="phase-1">Phase 1</h2>
 
 
@@ -321,7 +289,7 @@ read the file again or ask a question on Piazza.</p>
 
 <p>You can test your understanding by running</p>
 
-<pre><code>python3 ok -u -q q1</code></pre>
+<pre><code>python3 ok -u -q 1</code></pre>
 
 
 <h3 id="problem-2-2-pts">Problem 2 (2 pts)</h3>
@@ -357,8 +325,8 @@ adds one food to the <code>colony.food</code> total as its <code>action</code>.<
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q2 -u
-python3 ok -q q2 -i</code></pre>
+<pre><code>python3 ok -q 2 -u
+python3 ok -q 2 -i</code></pre>
 
 <p>Try playing the game again (<code>python3 ants_gui.py</code>).  Once you have placed a
 <code>HarvesterAnt</code>, you should accumulate food each turn.  Vanquishing the bees
@@ -389,11 +357,11 @@ that:</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q3 -u
-python3 ok -q q3 -i</code></pre>
+<pre><code>python3 ok -q 3 -u
+python3 ok -q 3 -i</code></pre>
 
 
-<h2 id="phase-q2-water-and-fire-partner-a">Phase q2: Water and Fire (Partner A)</h2>
+<h2 id="phase-2-water-and-fire-partner-a">Phase 2: Water and Fire (Partner A)</h2>
 
 
 
@@ -419,8 +387,8 @@ inheritance to reuse the functionality of the <code>Place</code> class.</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q4A -u
-python3 ok -q q4A -i</code></pre>
+<pre><code>python3 ok -q 4A -u
+python3 ok -q 4A -i</code></pre>
 
 <p>Once you've finished this problem, play a game that includes water.  To
 access the <code>wet_layout</code> that includes water, add the <code>--water</code> option
@@ -445,7 +413,7 @@ by its <code>damage</code> attribute (defaults to <code>3</code>).</p>
   </tr>
   <tr>
     <td><img src="img/ant_fire.gif"> <br> <code>FireAnt</code></td>
-    <td>6</td>
+    <td>4</td>
     <td>1</td>
   
 </tr></tbody></table>
@@ -464,8 +432,8 @@ the game that you've added a new type of <code>Ant</code>.</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q5A -u
-python3 ok -q q5A -i</code></pre>
+<pre><code>python3 ok -q 5A -u
+python3 ok -q 5A -i</code></pre>
 
 <p>After implementing <code>FireAnt</code>, be sure to test your program by playing a game or
 two!  A <code>FireAnt</code> should destroy all co-located Bees when it is stung.  To
@@ -502,8 +470,8 @@ random element of a sequence.</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q4B -u
-python3 ok -q q4B -i</code></pre>
+<pre><code>python3 ok -q 4B -u
+python3 ok -q 4B -i</code></pre>
 
 <p>After implementing <code>nearest_bee</code>, a <code>ThrowerAnt</code> should be able to
 <code>throw_at</code> a <code>Bee</code> in front of it that is not still in the <code>Hive</code>.
@@ -569,8 +537,8 @@ with appropriately constrained ranges and correct food costs.</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q5B -u
-python3 ok -q q5B -i</code></pre>
+<pre><code>python3 ok -q 5B -u
+python3 ok -q 5B -i</code></pre>
 
 
 <h2 id="phase-3-seen-and-unseen-partner-a">Phase 3: Seen and Unseen (Partner A)</h2>
@@ -609,8 +577,8 @@ with the value <code>'Wall'</code> (so that the graphics work) and a class attri
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q6A -u
-python3 ok -q q6A -i</code></pre>
+<pre><code>python3 ok -q 6A -u
+python3 ok -q 6A -i</code></pre>
 
 
 <h3 id="problem-7a-3-pts">Problem 7A (3 pts)</h3>
@@ -644,15 +612,14 @@ its <code>blocks_path</code> attribute is <code>False</code>.  Now <code>Bee</co
 
 <p>Finally, we want to make the <code>NinjaAnt</code> damage all <code>Bee</code>'s that fly past.
 Implement the <code>action</code> method in <code>NinjaAnt</code> to reduce the armor of all <code>Bee</code>s
-in the same <code>place</code> as the <code>NinjaAnt</code> by its <code>damage</code> attribute. Similar to
-the <code>FireAnt</code>, you must iterate over a list of bees that may change.</p>
+in the same <code>place</code> as the <code>NinjaAnt</code> by its <code>damage</code> attribute.</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q7A -u
-python3 ok -q q7A -i</code></pre>
+<pre><code>python3 ok -q 7A -u
+python3 ok -q 7A -i</code></pre>
 
-<p>For a challenge, try to win a game using only <code>HarvesterAnt</code>
+<p>For a challenge, try to win a game using only <code>HarversterAnt</code>
 and <code>NinjaAnt</code>.</p>
 
 
@@ -666,7 +633,7 @@ and <code>NinjaAnt</code>.</p>
 <p>Currently there are no ants that can be placed on <code>Water</code>.  Implement
 the <code>ScubaThrower</code>, which is a subclass of <code>ThrowerAnt</code> that is more
 costly and <code>watersafe</code>, but otherwise identical to its base class.
-A <code>ScubaThrower</code> should not lose its armor when placed in <code>Water</code>.</p>
+A <code>ScubaAnt</code> should not lose its armor when placed in <code>Water</code>.</p>
 
 <table class="ant">
   <tbody><tr>
@@ -689,8 +656,8 @@ game).</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q6B -u
-python3 ok -q q6B -i</code></pre>
+<pre><code>python3 ok -q 6B -u
+python3 ok -q 6B -i</code></pre>
 
 
 <h3 id="problem-7b-3-pts">Problem 7B (3 pts)</h3>
@@ -726,8 +693,8 @@ digesting; if so, decrement its <code>digesting</code> counter.  Otherwise, eat 
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q7B -u
-python3 ok -q q7B -i</code></pre>
+<pre><code>python3 ok -q 78 -u
+python3 ok -q 7B -i</code></pre>
 
 
 <h2 id="phase-4">Phase 4</h2>
@@ -813,42 +780,11 @@ simultaneously occupy the same <code>Place</code>:</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q8 -u
-python3 ok -q q8 -i</code></pre>
+<pre><code>python3 ok -q 8 -u
+python3 ok -q 8 -i</code></pre>
 
 
-<h3 id="problem-8-5-optional---no-points-awarded-for-this-problem">Problem 8.5 (Optional - No points awarded for this problem)</h3>
-
-<p>The <code>QueenAnt</code> implementation will be a daunting foe! (In addition
-to all the bees). As optional practice, please implement the
-<code>LaserAnt</code>, which hits all ants (friendly fire) and bees in front of it with its
-powerful laser. However, the laser gets weaker as it hits more
-insects (their bodies block the light) and also gets weaker the farther away
-the target is from the <code>LaserAnt</code>.</p>
-
-<p>As such, the damage done to each insect can be computed as follows:
-LaserAnt's damage attribute - Distance weakening factor *
-Number of squares away - Insect weakening factor * Number of insects damaged so far</p>
-
-<p>No tests are provided for <code>LaserAnt</code>. You are welcome to write your
-own doctests or unit tests to ensure that your <code>LaserAnt</code>s perform
-bug-free. Your reward for finishing this ant is that it will actually shoot lasers!</p>
-
-<table class="ant">
-  <tbody><tr>
-    <td><b>Class</b></td>
-    <td><b>Food</b></td>
-    <td><b>Damage</b></td>
-  </tr>
-  <tr>
-    <td><img src="img/ant_laser.gif"> <br> <code>LaserAnt</code></td>
-    <td>10</td>
-    <td>1.75</td>
-  </tr>
-</tbody></table>
-
-
-<h3 id="problem-9-6-pts">Problem 9 (6 pts)</h3>
+<h3 id="problem-9-5-pts">Problem 9 (5 pts)</h3>
 
 
 <p>Implement the <code>QueenAnt</code>. The queen is a waterproof <code>ScubaThrower</code> that
@@ -922,8 +858,8 @@ governed by three special rules:</p>
 
 <p>Test your implementation before moving on:</p>
 
-<pre><code>python3 ok -q q9 -u
-python3 ok -q q9 -i</code></pre>
+<pre><code>python3 ok -q 9 -u
+python3 ok -q 9 -i</code></pre>
 
 
 <h3 id="extra-credit-2-pts">Extra Credit (2 pts)</h3>
@@ -977,8 +913,8 @@ following three functions:</p>
 
 <p>You can run some provided tests, but they are not exhaustive:</p>
 
-<pre><code>python3 ok -q qEC -u
-python3 ok -q qEC -i</code></pre>
+<pre><code>python3 ok -q EC -u
+python3 ok -q EC -i</code></pre>
 
 <p>Make sure to test your code!  Your code should be able to apply
 multiple effects on a target (each new effect applies on top of
@@ -1002,4 +938,4 @@ the project as well!</p>
 
   
 
-</div>
+</body>
